@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../static/index.js"></script>
+        <title>ChatGPT ft. Spotify!</title>
+    </head>
+    <body>
+        <body style="background-color: lightgray; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>Welcome to ChatGPT ft. Spotify!</h1>
+        Brought to you by Chris Berniel Cobashatse<br><br>
+
+        This is an app built for the purposes of the Music Hum Final Project!<br><br>
+        It is meant to allow users to search for songs with certain characteristics<br>
+        by leveraging the capabilities of the ChatGPT and Spotify APIs.<br><br>
+        <form id="song_form">
+            <label for="song-input">Enter your search query using the format below:</label><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Give me N random songs with a X [measure]<br>
+            <textarea id="song-input" name="song-input" rows="2" cols="50"></textarea><br>
+            <button id="submit-button" type="submit">Get Spotify Embedded Links</button>
+            <!-- <button id="submit-button" type="button">Get Spotify URLs</button> -->
+        </form>
+        <br>
+        <div id="result-container"></div>
+    </body>
+</html>
